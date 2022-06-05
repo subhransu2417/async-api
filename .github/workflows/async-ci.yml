@@ -22,7 +22,7 @@ jobs:
       - name: Generating modelina from my AsyncAPI document
         uses: docker://asyncapi/github-action-for-generator:2.0.0
         with:
-          template: '@asyncapi/java-spring-template:1.8.28'  #In case of template from npm, because of @ it must be in quotes
+          template: '@asyncapi/java-spring-template:0.26.0'  #In case of template from npm, because of @ it must be in quotes
           filepath: './schemas/asyncapi.yaml'
           #parameters: baseHref=/test-experiment/ sidebarOrganization=byTags #space separated list of key/values
           output: generated-html
